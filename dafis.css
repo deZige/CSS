@@ -1,0 +1,195 @@
+@font-face {
+  font-family:'Yanone Kaffeesatz';
+  font-style:normal;
+  font-weight:400;
+  src:local('Yanone Kaffeesatz Regular'),
+      local('YanoneKaffeesatz-Regular'),
+      url(http://themes.googleusercontent.com/static/fonts/yanonekaffeesatz/v4/YDAoLskQQ5MOAgvHUQCcLRTHiN2BPBirwIkMLKUspj4.woff) format('woff');
+}
+  
+#dte-masonry-container {
+  font:normal 11px Arial,Sans-Serif;
+  color:#666;
+  margin:0 auto;
+}
+  
+#dte-masonry-container * {
+  border:none;
+  outline:none;
+}
+  
+#dte-masonry-container .json_post {
+  background:rgba(87, 87, 87, 0.1);
+  padding:20px;
+  margin:2px;
+  float:left;
+  box-shadow:inset 0px 2px 5px rgba(0, 0, 0, 0.3);
+  position:relative;
+  border-radius:5px;
+}
+  
+#dte-masonry-container .json_post h3 {
+  margin:0 0 10px;
+  padding:0 0;
+  font:normal 20px 'Yanone Kaffeesatz','Yanone Kaffeesatz Regular','Yanone Kaffeesatz Light',Impact,Arial,Sans-Serif;
+}
+  
+#dte-masonry-container .json_post h3 a {
+  text-decoration:none;
+  text-shadow:1px 1px 0 #f0f0f0;
+  color:#888;
+  font-weight:normal;
+}
+  
+#dte-masonry-container .json_post h3 a:hover {
+  text-shadow:-1px -1px 0 #f0f0f0;
+}
+ 
+#dte-masonry-container .json_post .json_sub-header {
+  display:block;
+  margin:0 0 10px;
+  border-top: 1px solid #f0f0f0;box-shadow:0 -1px 0 #B8B8B8;
+  padding-top:10px;
+  color:#627E83;
+}
+  
+#dte-masonry-container .json_post a.json_img-container {
+  display:block;
+  border:1px solid #fff;
+  background:rgba(87, 87, 87, 0.1);
+  padding:1%;
+  font-size:0;
+  border-radius:1px;
+}
+  
+#dte-masonry-container .json_post img {
+  margin:0 0;
+  padding:0 0;
+  width:100%;
+  height:auto;
+  display:block;
+  outline:none;
+  box-shadow:none;
+  opacity:0;
+  max-width:none;
+  max-height:none;
+}
+  
+#dte-masonry-container .json_post p {
+  margin:10px 0 0;
+  padding:0;
+  word-wrap:break-word;
+  overflow:hidden;
+}
+  
+#dte-masonry-container .json_post .json_post-footer {
+  text-align:left;
+  display:block;
+  margin-top:10px;
+  border-top: 1px solid #f0f0f0;box-shadow:0 -1px 0 #B8B8B8;
+  padding-top:10px;
+  overflow:hidden;
+  font-weight:bold;
+}
+  
+#dte-masonry-container a.json_more {
+  display:block;
+  Background:#bbb; 
+  Box-shadow: 0px -1px 1px #f0f0f0, 0px 1px 1px #666;
+  color:white;
+  padding:0;
+  width:30px;
+  height:30px;
+  line-height:32px;
+  text-align:center;
+  text-decoration:none;
+  position:absolute;
+  bottom:5px;
+  right:5px;
+  font-size:20px;
+  font-weight:bold
+  text-shadow:1px 1px 0 #000;
+  border-radius:100%;
+}
+  
+#dte-masonry-container a.json_more:hover {
+  text-shadow:-1px -1px 0 #000;
+}
+  
+.clear {
+  clear:both;
+}
+  
+#json_loading {
+  display:block;
+  width:120px;
+  position:fixed !important;
+  position:absolute;
+  text-align:center;
+  font:bold 11px/24px Arial,Sans-Serif;
+  color:white;
+  background-color:#bbb;
+  top:0;
+  left:50%;
+  margin-left:-60px;
+  z-index:999;
+  text-shadow:0 -1px 0 rgba(0,0,0,0.4);
+  border-radius:0 0 100% 100%;
+}
+  
+#json_loading.loaded {background-color:#888;}
+  
+#dte-masonry-container .json_post.json_thumbnail-mode.loading,
+#dte-masonry-container .json_post.json_summary-mode a.loading {
+  background:white url('data:image/gif;base64,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') no-repeat 50% 50% !important;
+  padding:0 0;
+}
+  
+#dte-masonry-container .json-post.json_summary-mode a.loading img {
+  background-color:transparent !important;
+}
+  
+#dte-masonry-nav {
+  text-align:center;
+  font:normal 16px 'Yanone Kaffeesatz','Yanone Kaffeesatz Regular','Yanone Kaffeesatz Light',Times,Serif;
+  margin:15px 0 30px;
+  display:none;
+}
+  
+#dte-masonry-nav a,
+#dte-masonry-nav #json_total-posts {
+  padding:4px 10px;
+  color:#000;
+  text-decoration:none;
+  text-shadow:1px 1px 0 #ebebeb;
+}
+#dte-masonry-nav a:hover {
+  color:white;
+}
+#dte-masonry-nav #json_total-posts {
+  border-radius:100%;
+  box-shadow: 0 0px 3px rgba(0,0,0,0.25), 0 0 40px rgba(0,0,0,0.5) inset;
+}
+  
+/* Transitions */
+.masonry.css-transition,
+.masonry.css-transition .masonry-brick {
+  -webkit-transition-duration:0.7s;
+  -moz-transition-duration:0.7s;
+  -o-transition-duration:0.7s;
+  transition-duration:0.7s;
+}
+  
+.masonry.css-transition {
+  -webkit-transition-property:height,width;
+  -moz-transition-property:height,width;
+  -o-transition-property:height,width;
+  transition-property:height,width;
+}
+  
+.masonry.css-transition .masonry-brick {
+  -webkit-transition-property:left,right,top;
+  -moz-transition-property:left,right,top;
+  -o-transition-property:left,right,top;
+  transition-property:left,right,top;
+}
